@@ -9,7 +9,7 @@ app_name = 'account'
 urlpatterns = [
 	path('properties', account_properties_view, name="properties"),
 	path('properties/update', update_account_view, name="update"),
-	path('login', obtain_auth_token, name="login"), # -> see accounts/api/views.py for response and url info
+	path('login', obtain_auth_token, name="login"),
 	path('register', registration_view, name="register"),
 ]
 
